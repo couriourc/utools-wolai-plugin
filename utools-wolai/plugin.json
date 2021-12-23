@@ -1,0 +1,16 @@
+{
+  "main": "index.html",
+  "preload": "preload.js",
+  "logo": "logo.jpg",
+  "platform": ["win32", "darwin", "linux"],
+  "features": [
+    {
+      "code": "wolai",
+      "explain": "直接在 utools 上打开 wolai ",
+      "cmds": ["wolai", "我来", "在线笔记"]
+    }
+  ],
+  "pluginSetting": {
+    "single": true
+  }
+}
