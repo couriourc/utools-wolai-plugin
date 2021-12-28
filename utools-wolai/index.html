@@ -44,6 +44,11 @@
       function openWindow() {
         if (utools.getIdleUBrowsers().length) {
           //  如果当前已经打开过了 就不打开了
+          // 说明运行了一个了，那么就重新唤起这一个就好了
+         utools.ubrowser
+            .goto(wolaiWebUrl)
+            .run(utools.getIdleUBrowsers().pop()["id"])
+            .show();
           return;
         }
         return utools.ubrowser
